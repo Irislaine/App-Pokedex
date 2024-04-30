@@ -9,13 +9,16 @@
     align-items: center;
 }
 
-
 .pokecard_back {
-    background-color: black;
     position: absolute;
     width: 100%;
     height: 100px;
     border-radius: 10px 10px 0 0;
+}
+
+.pokecard_info {
+    text-align: center;
+    font-family: Roboto;
 }
 
 .pokecard_img {
@@ -58,6 +61,7 @@
 
 
 /*----Colors-----*/
+
 .normal {
     background-color: pink;
 }
@@ -83,7 +87,8 @@
 }
 
 .bug {
-    background-color: lightgreen;
+    background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+
 }
 
 .ghost {
@@ -95,7 +100,7 @@
 }
 
 .fire {
-    background-color: red;
+    background: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
 }
 
 .water {
@@ -170,7 +175,7 @@
 }
 
 .pokecard--fire {
-    border-color: red;
+    border-color: rgba(230, 144, 30, 1);
 }
 
 .pokecard--water {

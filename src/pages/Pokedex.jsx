@@ -22,6 +22,7 @@ const Pokedex = () => {
     }
   }, [selectValue]);
 
+
   const textInput = useRef();
 
   const handleSubmit = (event) => {
@@ -29,8 +30,6 @@ const Pokedex = () => {
     setInputValue(textInput.current.value.toLowerCase().trim());
     textInput.current.value = '';
   }
-
-  // console.log(pokemons);
 
   const pokeSearch = (poke) => {
     const perName = poke.name.includes(inputValue);
