@@ -41,9 +41,7 @@ const HomePage = () => {
         <button className='home-btn'>Start</button>
       </form>
 
-      <footer className='home-footer'>
-        <img src="public/footer.png" alt="pokedex" />
-      </footer>
+      <footer className='home-footer' />
     </div>
   )
 }
