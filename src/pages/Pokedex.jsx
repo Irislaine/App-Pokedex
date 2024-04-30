@@ -19,7 +19,8 @@ const Pokedex = () => {
     } else {
       const url = 'https://pokeapi.co/api/v2/pokemon?limit=50';
       getPokemons(url);
-    }}, [selectValue]);
+    }
+  }, [selectValue]);
 
   const textInput = useRef();
 
@@ -43,34 +44,34 @@ const Pokedex = () => {
 
   return (
     <>
-    <header className='pokedex__header'>
-    </header>
-    <section className='pokedex'>
-      <h2 className='pokedex__title'><span>Welcome {trainer},</span> here you can find your favorite pokemon</h2>
+      <header className='pokedex__header'>
+      </header>
+      <section className='pokedex'>
+        <h2 className='pokedex__title'><span>Welcome {trainer},</span> here you can find your favorite pokemon</h2>
 
-      <div className='pokedex__search'>
-        <form onSubmit={handleSubmit}>
-          <input ref={textInput} type="text" />
-          <button className='pokedex__btn'>Search</button>
-        </form>
+        <div className='pokedex__search'>
+          <form onSubmit={handleSubmit}>
+            <input ref={textInput} type="text" />
+            <button className='pokedex__btn'>Search</button>
+          </form>
 
-        <PokeSelect
-          setSelectValue={setSelectValue}
-        />
-      </div>
+          <PokeSelect
+            setSelectValue={setSelectValue}
+          />
+        </div>
 
-      <div className='pokedex__container'>
-        {
-          // pagination?.results.filter(pokeSearch)
-          pokemons?.results.filter(pokeSearch).map((poke) => (
-            <PokeCard
-              key={poke.url}
-              url={poke.url}
-            />
-          ))
-        }
-      </div>
-    </section>
+        <div className='pokedex__container'>
+          {
+            // pagination?.results.filter(pokeSearch)
+            pokemons?.results.filter(pokeSearch).map((poke) => (
+              <PokeCard
+                key={poke.url}
+                url={poke.url}
+              />
+            ))
+          }
+        </div>
+      </section>
     </>
   )
 }

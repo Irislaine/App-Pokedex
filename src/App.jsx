@@ -9,9 +9,7 @@ import PokeInfo from './pages/PokeInfo';
 function App() {
 
   return (
-    <>
     <div className='poke__page'>
-      <div className='back_page'> </div>
       <Routes>
         <Route path='/' element={<HomePage/>} />
         <Route element={<ProtectedRoutes/>}>
@@ -20,7 +18,6 @@ function App() {
         </Route>
       </Routes>
     </div>
-    </>
   )
 }
 

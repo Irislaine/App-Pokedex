@@ -40,13 +40,13 @@ a:focus {
 
 
 .poke__page {
-    background-image: url(public/firstpage.png);
-    background-position: absolute;
-    background-size:contain;
-    background-repeat: no-repeat;
-    display: flex;
+    /* background-image: url(public/firstpage.png); */
+    /* background-position: absolute; */
+    /* background-size:contain; */
+    /* background-repeat: no-repeat; */
+    /* display: flex; */
     width: 100%;
-    margin: auto;
-    padding: 30px;
-    justify-content: center;
+    height: 100vh;
+    /* padding: 30px; */
+    /* justify-content: center; */
 }
