@@ -1,0 +1,26 @@
+.home {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+}
+
+.home h1 {
+    padding-top: 30px;
+    color: red;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.home h2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn {
+    width: 80px;
+    color: white;
+    background-color: red;
+    border-color: red;
+}

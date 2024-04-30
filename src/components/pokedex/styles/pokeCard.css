@@ -1,0 +1,281 @@
+.pokecard {
+    display: flex;
+    background-color: white;
+    position: relative;
+    width: 250px;
+    border: 5px solid;
+    border-radius: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.pokecard_back {
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    border-radius: 10px 10px 0 0;
+}
+
+.pokecard_img {
+    width: 70%;
+    z-index: 10;
+}
+
+.pokecard_types {
+    display: flex;
+}
+
+.slot2::before {
+    content: '/';
+    margin: 0 5px;
+}
+
+.pokecard hr {
+    width: 90%;
+    margin: 10px 0;
+}
+
+.pokecard_stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.pokecard_stats span {
+    display: flex;
+    flex-direction: column;
+}
+
+.pokecard_stats li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*----Colors-----*/
+.normal {
+    background-color: pink;
+}
+
+.fighting {
+    background-color: orangered;
+}
+
+.flying {
+    background-color: white;
+}
+
+.poison {
+    background-color: violet;
+}
+
+.ground {
+    background-color: brown;
+}
+
+.rock {
+    background-color: slategray;
+}
+
+.bug {
+    background-color: lightgreen;
+}
+
+.ghost {
+    background-color: rebeccapurple;
+}
+
+.steel {
+    background-color: steelblue;
+}
+
+.fire {
+    background-color: red;
+}
+
+.water {
+    background-color: dodgerblue;
+}
+
+.grass {
+    background-color: rgb(71, 199, 171);
+}
+
+.electric {
+    background-color: yellow;
+}
+
+.psychic {
+    background-color: darkmagenta;
+}
+
+.ice {
+    background-color: aqua;
+}
+
+.dragon {
+    background-color: lemonchiffon;
+}
+
+.dark {
+    background-color: black;
+}
+
+.fairy {
+    background-color: salmon;
+}
+
+
+/*-----Border-Colors-----*/
+
+.pokecard--normal {
+    border-color: pink;
+}
+
+.pokecard--fighting {
+    border-color: orangered;
+}
+
+.pokecard--flying {
+    border-color: white;
+}
+
+.pokecard--poison {
+    border-color: violet;
+}
+
+.pokecard--ground {
+    border-color: brown;
+}
+
+.pokecard--rock {
+    border-color: slategray;
+}
+
+.pokecard--bug {
+    border-color: lightgreen;
+}
+
+.pokecard--ghost {
+    border-color: rebeccapurple;
+}
+
+.pokecard--steel {
+    border-color: steelblue;
+}
+
+.pokecard--fire {
+    border-color: red;
+}
+
+.pokecard--water {
+    border-color: dodgerblue;
+}
+
+.pokecard--grass {
+    border-color: green;
+}
+
+.pokecard--electric {
+    border-color: yellow;
+}
+
+.pokecard--psychic {
+    border-color: darkmagenta;
+}
+
+.pokecard--ice {
+    border-color: aqua;
+}
+
+.pokecard--dragon {
+    border-color: lemonchiffon;
+}
+
+.pokecard--dark {
+    border-color: black;
+}
+
+.pokecard--fairy {
+    border-color: salmon;
+}
+
+/*-----stats colors-----*/
+
+
+.stats--normal {
+    color: pink;
+}
+
+.stats--fighting {
+    color: orangered;
+}
+
+.stats--flying {
+    color: white;
+}
+
+.stats--poison {
+    color: violet;
+}
+
+.stats--ground {
+    color: brown;
+}
+
+.stats--rock {
+    color: slategray;
+}
+
+.stats--bug {
+    color: lightgreen;
+}
+
+.stats--ghost {
+    color: rebeccapurple;
+}
+
+.stats--steel {
+    color: steelblue;
+}
+
+.stats--fire {
+    color: red;
+}
+
+.stats--water {
+    color: dodgerblue;
+}
+
+.stats--grass {
+    color: green;
+}
+
+.stats--electric {
+    color: yellow;
+}
+
+.stats--psychic {
+    color: darkmagenta;
+}
+
+.stats--ice {
+    color: aqua;
+}
+
+.stats--dragon {
+    color: lemonchiffon;
+}
+
+.stats--dark {
+    color: black;
+}
+
+.stats--fairy {
+    color: salmon;
+}
