@@ -7,6 +7,7 @@
     border-radius: 15px;
     flex-direction: column;
     align-items: center;
+    font-family: Roboto;
 }
 
 .pokecard_back {
@@ -18,7 +19,10 @@
 
 .pokecard_info {
     text-align: center;
-    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 10px;
 }
 
 .pokecard_img {
@@ -28,6 +32,14 @@
 
 .pokecard_types {
     display: flex;
+    font-size: 14px;
+    color: rgba(79, 79, 79, 1);
+    margin-bottom: 4px;
+}
+
+.pokecard_type {
+    font-size: 10px;
+    color: rgba(159, 159, 159, 1);
 }
 
 .slot2::before {
@@ -44,21 +56,27 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    gap: 10px;
+    gap: 20px;
     padding-bottom: 20px;
+    grid-column-gap: 80px;
 }
 
-.pokecard_stats span {
-    display: flex;
-    flex-direction: column;
+.pokecard_stat_name {
+    font-size: 10px;
+    color: rgba(159, 159, 159, 1);    ;
+}
+
+.pokecard_stat_value {
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .pokecard_stats li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 8px;
 }
-
 
 /*----Colors-----*/
 
@@ -87,8 +105,7 @@
 }
 
 .bug {
-    background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
-
+    background: linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%);
 }
 
 .ghost {
@@ -104,11 +121,11 @@
 }
 
 .water {
-    background-color: dodgerblue;
+    background: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
 }
 
 .grass {
-    background-color: rgb(71, 199, 171);
+    background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
 }
 
 .electric {
@@ -163,7 +180,7 @@
 }
 
 .pokecard--bug {
-    border-color: lightgreen;
+    border-color: #4AB648;
 }
 
 .pokecard--ghost {
@@ -179,11 +196,11 @@
 }
 
 .pokecard--water {
-    border-color: dodgerblue;
+    border-color: rgba(20, 121, 251, 1);
 }
 
 .pokecard--grass {
-    border-color: green;
+    border-color: lightgreen;
 }
 
 .pokecard--electric {
@@ -238,7 +255,7 @@
 }
 
 .stats--bug {
-    color: lightgreen;
+    color: rgba(74, 182, 72, 1);
 }
 
 .stats--ghost {
@@ -250,7 +267,7 @@
 }
 
 .stats--fire {
-    color: red;
+    color: rgba(231, 92, 53, 1);
 }
 
 .stats--water {
@@ -258,7 +275,7 @@
 }
 
 .stats--grass {
-    color: green;
+    color: rgba(65, 100, 96, 1);
 }
 
 .stats--electric {
