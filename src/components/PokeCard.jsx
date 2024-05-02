@@ -13,8 +13,6 @@ function PokeCard({ url }) {
     getPokemon(url);
   }, [])
 
-  console.log(pokemon)
-
   const capitalizeFirstLetter = (word) => 
     word?.charAt(0).toUpperCase() + word?.slice(1)
 

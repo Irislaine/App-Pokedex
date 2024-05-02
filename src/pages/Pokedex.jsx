@@ -4,6 +4,7 @@ import './styles/pokedex.css';
 import useFetch from '../hooks/useFetch';
 import PokeCard from '../components/PokeCard';
 import PokeSelect from '../components/PokeSelect';
+import Pagination from '../components/pagination/Pagination';
 
 const Pokedex = () => {
 
@@ -11,17 +12,21 @@ const Pokedex = () => {
   const [inputValue, setInputValue] = useState('');
   const [pokemons, getPokemons, getType] = useFetch();
 
+  const limit = 50;
+  const [currentPage, setCurrentPage] = useState(1);
+
   const trainer = useSelector(store => store.trainer);
 
   useEffect(() => {
     if (selectValue) {
       getType(selectValue);
     } else {
-      const url = 'https://pokeapi.co/api/v2/pokemon?limit=50';
+      const offset = currentPage * limit - limit
+      const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
       getPokemons(url);
     }
-  }, [selectValue]);
-
+    window.scrollTo(0,0)
+  }, [selectValue, currentPage]);
 
   const textInput = useRef();
 
@@ -36,11 +41,6 @@ const Pokedex = () => {
     return perName;
   }
 
-  // const pagination = () => {
-  //   pokemons?.results.filter(pokeSearch).slice()
-  //   return
-  // }
-
   return (
     <>
       <header className='pokedex__header'>
@@ -49,19 +49,19 @@ const Pokedex = () => {
         <h2 className='pokedex__title'><span>Welcome {trainer},</span> here you can find your favorite pokemon</h2>
 
         <div className='pokedex__search'>
-          <form onSubmit={handleSubmit}>
-            <input ref={textInput} type="text" />
+          <form className='pokedex__form' onSubmit={handleSubmit}>
+            <input className='pokedex__input' ref={textInput} type="text" 
+             placeholder='Search a pokemón'/>
             <button className='pokedex__btn'>Search</button>
           </form>
+          </div> 
 
           <PokeSelect
             setSelectValue={setSelectValue}
           />
-        </div>
 
         <div className='pokedex__container'>
           {
-            // pagination?.results.filter(pokeSearch)
             pokemons?.results.filter(pokeSearch).map((poke) => (
               <PokeCard
                 key={poke.url}
@@ -70,6 +70,12 @@ const Pokedex = () => {
             ))
           }
         </div>
+
+        <Pagination
+          currentPage={currentPage}
+          totalPages={Math.ceil(pokemons?.count / limit) || 0}
+          onPageChange={setCurrentPage}
+        />
       </section>
     </>
   )

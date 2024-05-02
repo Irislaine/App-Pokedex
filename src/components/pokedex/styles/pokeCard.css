@@ -3,11 +3,11 @@
     background-color: white;
     position: relative;
     width: 250px;
-    border: 5px solid;
-    border-radius: 15px;
+    border: 8px solid;
+    border-radius: 20px;
     flex-direction: column;
     align-items: center;
-    font-family: Roboto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .pokecard_back {
@@ -63,7 +63,7 @@
 
 .pokecard_stat_name {
     font-size: 10px;
-    color: rgba(159, 159, 159, 1);    ;
+    color: rgba(159, 159, 159, 1);
 }
 
 .pokecard_stat_value {
@@ -81,39 +81,48 @@
 /*----Colors-----*/
 
 .normal {
-    background-color: pink;
+    background: linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%);
+
 }
 
 .fighting {
-    background-color: orangered;
+    background: linear-gradient(176.83deg, #96402A -8.78%, #F1613C 169.09%, #CB735D 242.33%);
+
 }
 
 .flying {
-    background-color: white;
+    background: linear-gradient(179.75deg, #478A93 -19.96%, #56A4AE 43.67%, #A2BEC1 138.4%);
+
 }
 
 .poison {
-    background-color: violet;
+    background: linear-gradient(177.03deg, #5B3184 -11.97%, #A564E3 71.28%, #CE9BFF 135.64%);
+
 }
 
 .ground {
-    background-color: brown;
+    background: linear-gradient(179.75deg, #654008 -19.96%, #895C1A 43.67%, #D69638 138.4%);
+
 }
 
 .rock {
-    background-color: slategray;
+    background: linear-gradient(177.03deg, #7E7E7E -11.97%, #8D8D94 57.49%, #D3D3D3 135.64%);
+
 }
 
 .bug {
     background: linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%);
+
 }
 
 .ghost {
-    background-color: rebeccapurple;
+    background: linear-gradient(177.03deg, #323569 -11.97%, #454AA8 57.49%, #787DDA 135.64%);
+
 }
 
 .steel {
-    background-color: steelblue;
+    background: linear-gradient(179.75deg, #5E736C -19.96%, #728881 43.67%, #A8A8A8 138.4%);
+
 }
 
 .fire {
@@ -129,66 +138,71 @@
 }
 
 .electric {
-    background-color: yellow;
+    background: linear-gradient(179.75deg, #0C1395 -19.96%, #2B319B 43.67%, #7075D9 138.4%);
+
 }
 
 .psychic {
-    background-color: darkmagenta;
+    background: linear-gradient(179.75deg, #971B45 -19.96%, #C23867 43.67%, #CD7D98 138.4%);
+
 }
 
 .ice {
-    background-color: aqua;
+    background: linear-gradient(177.03deg, #6FBEDF -11.97%, #64CBF5 47.77%, #BDEBFE 136.72%);
+
 }
 
 .dragon {
-    background-color: lemonchiffon;
+    background: linear-gradient(179.75deg, #478A93 -19.96%, #56A4AE 43.67%, #A2BEC1 138.4%);
+
 }
 
 .dark {
-    background-color: black;
+    background: linear-gradient(177.03deg, #030706 -11.97%, #0D1211 57.49%, #5A5E5D 135.64%);
 }
 
 .fairy {
-    background-color: salmon;
+    background: linear-gradient(179.75deg, #971B45 -19.96%, #C23867 43.67%, #CD7D98 138.4%);
+
 }
 
 
 /*-----Border-Colors-----*/
 
 .pokecard--normal {
-    border-color: pink;
+    border-color: rgba(115, 82, 89, 1);
 }
 
 .pokecard--fighting {
-    border-color: orangered;
+    border-color: rgba(150, 64, 42, 1);
 }
 
 .pokecard--flying {
-    border-color: white;
+    border-color: rgba(71, 138, 147, 1);
 }
 
 .pokecard--poison {
-    border-color: violet;
+    border-color: rgba(91, 49, 132, 1);
 }
 
 .pokecard--ground {
-    border-color: brown;
+    border-color: rgba(101, 64, 8, 1);
 }
 
 .pokecard--rock {
-    border-color: slategray;
+    border-color: rgba(126, 126, 126, 1);
 }
 
 .pokecard--bug {
-    border-color: #4AB648;
+    border-color: rgba(74, 182, 72, 1);
 }
 
 .pokecard--ghost {
-    border-color: rebeccapurple;
+    border-color: rgba(50, 53, 105, 1);
 }
 
 .pokecard--steel {
-    border-color: steelblue;
+    border-color: rgba(94, 115, 108, 1);
 }
 
 .pokecard--fire {
@@ -200,23 +214,23 @@
 }
 
 .pokecard--grass {
-    border-color: lightgreen;
+    border-color: rgba(177, 219, 188, 1);
 }
 
 .pokecard--electric {
-    border-color: yellow;
+    border-color: rgba(12, 19, 149, 1);
 }
 
 .pokecard--psychic {
-    border-color: darkmagenta;
+    border-color: rgba(151, 27, 69, 1);
 }
 
 .pokecard--ice {
-    border-color: aqua;
+    border-color: rgba(111, 190, 223, 1);
 }
 
 .pokecard--dragon {
-    border-color: lemonchiffon;
+    border-color: rgba(71, 138, 147, 1);
 }
 
 .pokecard--dark {
@@ -224,34 +238,38 @@
 }
 
 .pokecard--fairy {
-    border-color: salmon;
+    border-color: rgba(151, 27, 69, 1);
 }
 
 /*-----stats colors-----*/
 
 
 .stats--normal {
-    color: pink;
+    color: rgba(115, 82, 89, 1);
 }
 
+
 .stats--fighting {
-    color: orangered;
+    color: rgba(115, 82, 89, 1);
 }
 
 .stats--flying {
-    color: white;
+    color: rgba(71, 138, 147, 1);
+
 }
 
 .stats--poison {
-    color: violet;
+    color: rgba(91, 49, 132, 1);
+
 }
 
 .stats--ground {
-    color: brown;
+    color: rgba(101, 64, 8, 1);
 }
 
 .stats--rock {
-    color: slategray;
+    color: rgba(126, 126, 126, 1);
+
 }
 
 .stats--bug {
@@ -259,11 +277,11 @@
 }
 
 .stats--ghost {
-    color: rebeccapurple;
+    color: rgba(50, 53, 105, 1);
 }
 
 .stats--steel {
-    color: steelblue;
+    color: rgba(94, 115, 108, 1);
 }
 
 .stats--fire {
@@ -271,7 +289,7 @@
 }
 
 .stats--water {
-    color: dodgerblue;
+    color: rgba(20, 121, 251, 1);
 }
 
 .stats--grass {
@@ -279,19 +297,20 @@
 }
 
 .stats--electric {
-    color: yellow;
+    color: rgba(12, 19, 149, 1);
+
 }
 
 .stats--psychic {
-    color: darkmagenta;
+    color: rgba(151, 27, 69, 1);
 }
 
 .stats--ice {
-    color: aqua;
+    color: rgba(111, 190, 223, 1);
 }
 
 .stats--dragon {
-    color: lemonchiffon;
+    color: rgba(71, 138, 147, 1);
 }
 
 .stats--dark {
@@ -299,5 +318,5 @@
 }
 
 .stats--fairy {
-    color: salmon;
+    color: rgba(151, 27, 69, 1);
 }

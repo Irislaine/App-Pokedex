@@ -6,8 +6,6 @@ const ProtectedRoutes = () => {
     
     const trainer = useSelector((store) => store.trainer);
 
-    console.log(trainer);
-
     if(trainer.length > 2) {
       return <Outlet/>
     } else {
