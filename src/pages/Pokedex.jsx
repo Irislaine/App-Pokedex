@@ -44,21 +44,32 @@ const Pokedex = () => {
   return (
     <>
       <header className='pokedex__header'>
+        <img 
+          className='pokedex_img'
+          src="public/pokedex.png" alt=""
+        />
       </header>
       <section className='pokedex'>
-        <h2 className='pokedex__title'><span>Welcome {trainer},</span> here you can find your favorite pokemon</h2>
+        <h2 className='pokedex__title'>
+          <span>Welcome {trainer},</span> here you can find your favorite pokemon
+        </h2>
 
         <div className='pokedex__search'>
           <form className='pokedex__form' onSubmit={handleSubmit}>
-            <input className='pokedex__input' ref={textInput} type="text" 
-             placeholder='Search a pokemón'/>
+            <input 
+              className='pokedex__input' 
+              ref={textInput} 
+              type="text" 
+              placeholder='Search a pokemón'
+            />
+
             <button className='pokedex__btn'>Search</button>
           </form>
-          </div> 
 
           <PokeSelect
             setSelectValue={setSelectValue}
           />
+        </div> 
 
         <div className='pokedex__container'>
           {
