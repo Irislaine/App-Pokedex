@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
-import ColorThief from 'colorthief';
-
+import ColorThief  from 'colorThief';
 
 export const useBgColorCard = ( urlImg ) => {
 

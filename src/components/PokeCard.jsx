@@ -13,7 +13,7 @@ function PokeCard({ url }) {
     getPokemon(url);
   }, [])
 
-  const capitalizeFirstLetter = (word) => 
+  const capitalizeFirstLetter = (word) =>
     word?.charAt(0).toUpperCase() + word?.slice(1)
 
   const handlePokemon = () => {
@@ -21,7 +21,7 @@ function PokeCard({ url }) {
   }
 
   return (
-    <article 
+    <article
       onClick={handlePokemon}
       className={`pokecard pokecard--${pokemon?.types[0].type.name}`}
     >
@@ -62,10 +62,10 @@ function PokeCard({ url }) {
           pokemon?.stats.map(stat => (
             !stat.stat.name.includes('-') &&
             <li key={stat.stat.url}>
-              <span className='pokecard_stat_name'>     
+              <span className='pokecard_stat_name'>
                 {stat.stat.name.toUpperCase()}
               </span>
-            
+
               <span className={`pokecard_stat_value stats--${pokemon?.types[0].type.name}`}>
                 {stat.base_stat}
               </span>

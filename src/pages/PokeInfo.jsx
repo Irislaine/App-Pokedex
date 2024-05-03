@@ -30,7 +30,7 @@ const PokeInfo = () => {
       <header className='pokemon_header'>
         <img
           className='pokedex_img'
-          src="public/pokedex.png" alt="pokemon/header/img"
+          src="../../pokedex.png" alt="pokemon/header/img"
         />
       </header>
 
@@ -84,24 +84,25 @@ const PokeInfo = () => {
             <div className="pokeinfo__skills">
               <article>
                 <h3>Type</h3>
-                <ul style={{ color: "#fff" }}>
+                <ul style={{ color: "#777" }}>
                   {pokemon?.types.map((type) => (
                     <li
                       style={{
                         background: `rgba(${colors[0]})`,
                       }}
-                      key={type.type.url}
-                    >
-                      {type.type.name}
+                      key={type.type.url}>{type.type.name}
                     </li>
                   ))}
                 </ul>
+                
               </article>
               <article>
                 <h3>Skills</h3>
                 <ul>
                   {pokemon?.abilities.map((skill) => (
-                    <li key={skill.ability.url}>{skill.ability.name}</li>
+                    <li key={skill.ability.url}
+                    >
+                      {skill.ability.name}</li>
                   ))}
                 </ul>
               </article>

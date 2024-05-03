@@ -1,5 +1,5 @@
 .pokedex__header {
-    background-image: url(public/pokeheader.png);
+    background-image: url(../../../pokeheader.png);
     background-size: cover;
     background-position: center;
     width: 100%;

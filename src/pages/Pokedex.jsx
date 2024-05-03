@@ -50,7 +50,7 @@ const Pokedex = () => {
       <header className='pokedex__header'>
         <img
           className='pokedex_img'
-          src="/pokedex.png" alt=""
+          src="../../pokedex.png" alt=""
         />
       </header>
       <section className='pokedex'>

@@ -1,5 +1,5 @@
 .pokemon_header {
-    background-image: url(public/pokeheader.png);
+    background-image: url(../../../pokeheader.png);
     background-size: cover;
     margin-top: auto;
     width: 100%;
