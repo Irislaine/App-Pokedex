@@ -8,7 +8,7 @@ const StatProgress = ({statName, statValue}) => {
     return (
         <li className='stat_progress'>
             <div className='stat_info'>
-                <span className='stat_name'>{statName}</span>
+                <span className='stat_name'>{statName}:</span>
                 <span className='stat_value'>{statValue}/150</span>
             </div>
 

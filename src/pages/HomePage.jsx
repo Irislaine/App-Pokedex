@@ -16,7 +16,7 @@ const HomePage = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     dispatch(setTrainer(textInput.current.value.trim()));
-    //  textInput.current.value = '';
+    textInput.current.value = '';
     navigate('/pokedex')
   }
 
@@ -37,7 +37,6 @@ const HomePage = () => {
           placeholder='Your name...'
           ref={textInput} type="text"
         />
-
         <button className='home-btn'>Start</button>
       </form>
 

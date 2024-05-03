@@ -2,26 +2,26 @@
     margin: 10px;
     width: 100%;
     height: 20px;
-    background-color: rgb(222, 215, 215);
+    background: rgba(246, 246, 246, 1);
     gap: 20px;
 }
 
 .stat_info {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
     margin: 10px;
 }
 
 .stat_value {
-    display: grid;
-	grid-column: 115px;
-}
+    display: flex;
+}   
 
 .stat_name {
     text-transform: capitalize;
 }
 
 .progress {
-    background-color: rgb(228, 178, 83);
     height: 20px;
+    background: linear-gradient(90deg, #FCD676 -2.25%, #E6901E 133.18%);
 }

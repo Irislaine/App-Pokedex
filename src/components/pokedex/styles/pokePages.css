@@ -1,0 +1,21 @@
+.pagination {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 20px;
+    gap: 20px;
+}
+
+.pagination_btn--2,
+.pagination_btn--1 {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #D93F3F;
+    color: white;
+}
+
