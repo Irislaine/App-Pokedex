@@ -38,7 +38,7 @@ const PokeInfo = () => {
         <article className="pokeinfo__container--stats">
           <div
             style={{
-              background: `linear-gradient(rgb(${colors[0]}), rgb(${colors[6]}))`,
+              background: `linear-gradient(rgb(${colors[0]}), rgb(${colors[5]}))`,
             }}
             className={`pokeinfo__back ${pokemon?.types[0].type.name} `}
           >

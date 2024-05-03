@@ -59,8 +59,8 @@
     justify-content: center;
     text-align: center;
     border: 1px solid gray;
-    width: 80px;
-    height: 40px;
+    width: 55px;
+    height: 50px;
     font-weight: bold;
     font-size: 25px;
   }
@@ -106,7 +106,6 @@
     gap: 10px;
     font-weight: bold;
     font-size: 20px;
-    gap: 10px;
   }
   
   .pokeinfo__skills {
@@ -125,15 +124,14 @@
   
   .pokeinfo__skills ul {
     display: flex;
-    gap: 10px;
+    gap: 20px;
   }
   
   .pokeinfo__skills li {
-    /* flex: 1; */
     width: 150px;
     height: auto;
     text-align: center;
-    border: 0.1px black solid;
+    border: 0.1px rgb(142, 138, 138) solid;
     font-weight: bold;
     padding: 10px;
     border-radius: 2px;
