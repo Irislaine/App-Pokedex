@@ -17,7 +17,7 @@
     border-radius: 10px 10px 0 0;
 }
 
-.pokecard_info {
+.pokecard_name {
     text-align: center;
     font-size: 25px;
     font-weight: 400;
@@ -50,6 +50,7 @@
 .pokecard hr {
     width: 90%;
     margin: 10px 0;
+    border: 0.5px solid rgba(229, 229, 229, 1);
 }
 
 .pokecard_stats {
