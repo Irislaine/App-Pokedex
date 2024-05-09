@@ -11,7 +11,7 @@ export const useBgColorCard = ( urlImg ) => {
             return
         }
         // Crea una instancia de ColorThief
-        const colorThief = new ColorThief()
+        var colorThief = new ColorThief()
 
         // Crea la instancia de una imagen
         const image = new Image();

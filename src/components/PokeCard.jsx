@@ -36,7 +36,7 @@ function PokeCard({ url }) {
 
       <div className='pokecard_info'>
         <h3 className={`stats--${pokemon?.types[0].type.name}`} >
-          {capitalizeFirstLetter(pokemon?.name)}
+          {capitalizeFirstLetter(pokemon?.name)||''}
         </h3>
       </div>
 

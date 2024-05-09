@@ -13,7 +13,7 @@ const PokeInfo = () => {
   const [pokemon, getPokemon] = useFetch();
 
   const [colors] = useBgColorCard(
-    pokemon?.sprites.other["official-artwork"].front_default
+    pokemon?.sprites.other?.['official-artwork'].front_default 
   );
 
   useEffect(() => {
